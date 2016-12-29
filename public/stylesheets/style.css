@@ -1,0 +1,23 @@
+body {
+    font-family:lato;
+    background-attachment:scroll;
+    background: url('/brickwall.png') repeat fixed;
+}
+div.main-title {
+    color:#F23557;
+    height:;letter-spacing:;
+    font-family:roboto;
+    text-align:center;
+    background-color:#282F44;
+    background-size:cover;
+    font-size: 20em;
+}
+@media screen and (max-width: 700px) { 
+/* Specific to this particular image */
+  div.main-title {
+    font-size:100px;
+  }
+}
+img{
+    border-radius:8px;
+}
