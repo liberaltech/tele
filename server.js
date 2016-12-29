@@ -10,7 +10,10 @@ var express = require('express'),
 		
 Object.assign=require('object-assign')
 
-app.engine('html', require('ejs').renderFile);
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+//app.engine('html', require('ejs').renderFile);
 app.use(morgan('combined'))
 
 
@@ -20,6 +23,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+app.use('/', routes);
+app.use('/users', users);
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
