@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WikiSearch</title>
+  
+  
+  <link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<!-- <link rel='stylesheet prefetch' href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css'> -->
+<link rel='stylesheet prefetch' href='//fonts.googleapis.com/css?family=Roboto|Montserrat|Source+Sans+Pro|Lato|Open+Sans|Oswald|Raleway|Merriweather'>
+<link rel='stylesheet prefetch' href='//cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/css/nanoscroller.min.css'>
+<link rel='stylesheet prefetch' href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+
+<link rel="stylesheet" href="/stylesheets/wiki.css">
+
+  
+</head>
+
+<body>
+  <form id="form" role="form" class="form-inline ui-widget" method="go">
+
+  <div id="userIn" class="form-group has-feedback">
+    <input type="text" name="query" id="tags" placeholder="Wikipedia">
+
+  </div>
+  <div class="container">
+    <button type="button" id="searchFor" class="btn btn-default"></button>
+    <a href="http://en.m.wikipedia.org/wiki/Special:Random" id="one" target="rando" type="button"><strong>Suprise!</strong></a>
+  </div>
+</form>
+<div id="about" class="nano">
+  <div class="nano-content">
+    <div class="results" name="end"></div>
+  </div>
+</div>
+<iframe frameborder="0" class="one" src="http://www.google.com" name="rando"></iframe>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src="/javascripts/wiki.js"></script>
+
+</body>
+</html>

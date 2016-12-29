@@ -1,0 +1,16 @@
+body {
+  margin: 1%;
+}
+
+div {
+  width: 50%;
+}
+
+textarea {
+  resize: none;
+  width: 50%;
+}
+
+textarea:focus {
+  outline: none;
+}

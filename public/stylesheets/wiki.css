@@ -1,0 +1,115 @@
+body {
+  color: #393E46;
+  margin-top: 20%;
+  font-family: Lato;
+}
+
+button.btn {
+  visibility: hidden;
+}
+
+a#one {
+  margin-left: 100px;
+  font-family: Lato;
+  float: right;
+  text-decoration: none;
+}
+
+.results {
+  font-size: 100%;
+  font-family: Lato;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* Result link properties */
+#about {
+  padding: 50px;
+}
+
+#article-one {
+  margin-top: 10px;
+  color: #A7425C;
+}
+
+p#article-two {
+  color: #2C2D34;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+a#two:hover {
+  text-decoration: none;
+}
+
+/*------------------ */
+.sum {
+  margin-left: 20px;
+}
+
+form {
+  text-align: center;
+  width: 100%;
+}
+
+iframe {
+  width: 90%;
+  height: 50vh;
+}
+
+[placeholder] {
+  text-decoration: none;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  text-decoration: none;
+  transition: opacity 0.5s 0.5s ease;
+}
+
+#tags {
+  color: #7E858B;
+  box-decoration: none;
+  padding: 35px;
+  font-size: 50px;
+  box-sizing: border-box;
+  outline: none;
+  border-bottom: solid;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  height: 45px;
+  width: 90%;
+}
+
+a input {
+  outline: none;
+  border: none;
+}
+
+.form-control {
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nano {
+  width: 100%;
+  height: 80vh;
+}
+
+.nano > .nano-content {
+  padding: 20px;
+}
+
+.nano > .nano-pane {
+  background: #888;
+}
+
+.nano > .nano-pane > .nano-slider {
+  background: #111;
+}
+
+.ui-menu {
+  font-style: Lato;
+  font-size: 25px;
+}

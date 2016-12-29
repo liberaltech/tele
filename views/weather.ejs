@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Weather</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css'>
+<link rel='stylesheet prefetch' href='http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css'>
+<link rel="stylesheet" href="/stylesheets/weather.css">
+
+  
+</head>
+
+<body>
+  <div class='container-fluid'>
+  <div data-role="page" id="page1">
+    <div id='upper' data-role="header">
+      <div id='title' class='city'></div>
+    </div>
+    <div role="main" class="ui-content">
+      <div data-role="tabs">
+        <div data-role="navbar" class='myNav'>
+          <ul>
+            <li>
+              <a id='U' href="#fragment-1" class='ui-btn-active U'>
+                <div id='UnDia'></div>
+              </a>
+            </li>
+            <li>
+              <a id='U' href="#fragment-2" class='U'>
+                <div id='DosDia'></div>
+              </a>
+            </li>
+            <li>
+              <a id='U' href="#fragment-3" class='U'>
+                <div id='TresDia'></div>
+              </a>
+            </li>
+            <li>
+              <a id='U' href="#fragment-4" class='U'>
+                <div id='CuatDia'></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div id="fragment-1">
+            <div class='w3-card'>
+              <div id='Uncon'></div>   
+              <i id='icon_0' class='titleIcon wi'></i>
+              <div class='F temp'>
+                <div id='Fahr_One_High'></div>
+                <div id='Fahr_One_Low'></div>
+              </div>
+              <div style='display: none' class='C temp'>
+                <div id='Cel_One_High'></div>
+                <div id='Cel_One_Low'></div>
+              </div>
+            </div>
+          </div>
+          <div id="fragment-2">
+            <div class='w3-card'>     
+              <div id='Doscon'></div>     
+              <i id='icon_1' class='titleIcon wi'></i>
+              <div class='F temp'>
+                <div id='Fahr_Two_High'></div>
+                <div id='Fahr_Two_Low'></div>
+              </div>
+              <div style='display: none' class='C temp'>
+                <div id='Cel_Two_High'></div>
+                <div id='Cel_Two_Low'></div>
+              </div>
+            </div>
+          </div>
+          <div id="fragment-3">
+            <div class='w3-card'>
+              <div id='TresDia'></div>
+              <div id='Trescon'></div>
+              <i id='icon_2' class='titleIcon wi'></i>
+              <div class='F temp'>
+                <div id='Fahr_Three_High'></div>
+                <div id='Fahr_Three_Low'></div>
+              </div>
+              <div style='display: none' class='C temp'>
+                <div id='Cel_Three_High'></div>
+                <div id='Cel_Three_Low'></div>
+              </div>
+            </div>
+          </div>
+          <div id="fragment-4">
+            <div class='w3-card'>
+              <div id='CuatDia'></div>
+              <div id='Cuatcon'></div>
+              <i id='icon_3' class='titleIcon wi'></i>
+              <div class='F temp'>
+                <div id='Fahr_Four_High'></div>
+                <div id='Fahr_Four_Low'></div>
+              </div>
+              <div style='display: none' class='C temp'>
+                <div id='Cel_Four_High'></div>
+                <div id='Cel_Four_Low'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='myButton'>
+          <i id='f' class="wi wi-fahrenheit degrees"></i><i style='display: none' id='c' class="wi wi-celsius degrees"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js'></script>
+
+    <script src="/javascripts/weather.js"></script>
+
+</body>
+</html>

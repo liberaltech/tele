@@ -1,0 +1,83 @@
+body{
+	background-image: none;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+.city{
+	background-color: #E54861;
+	box-shadow: 0 0 10px #4B4848;
+	color: #EEEEEE;
+	font-size: 30px;
+	padding: 5px;
+	text-align: center;
+	text-shadow: none;
+}
+.myButton{
+	background-color: #E54861;
+	border-radius: 10px;
+	border-style: none;
+	box-shadow: 0 0 10px #4B4848;
+	color: #EEEEEE;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	width: 15%;
+}
+.titleIcon{
+	color: #FAF8F8;
+	font-size: 100px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	padding: 10px;
+	text-align: center;
+}
+.titleIcon:hover{
+	color: #FAF8F8;
+}
+
+.ui-overlay-a,
+.ui-page-theme-a,
+.ui-page-theme-a .ui-panel-wrapper{
+	background-color: #EEEEEE;
+	background-image: none;
+	text-shadow: none;
+}
+.w3-card{
+	background-color: #00ADB5;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #4B4848;
+	color: #FAF8F8;
+	font-size: 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#U{
+	background-color: #00ADB5;
+	border-radius: 10px;
+	border-style: none;
+	box-shadow: 0 0 10px #4B4848;
+	font-family: futura;
+	font-size: 15px;
+	margin: 10px;
+	outline-style: none;
+	text-decoration: none;
+	text-shadow: none;
+}
+#U:active{
+	box-shadow: 0 0 10px #4B4848;
+	color: #FAF8F8;
+	font-family: futura;
+	font-size: 15px;
+	outline-style: none;
+	text-decoration: none;
+}
+li{
+	outline-style: none;
+}
+ul{
+	border-radius: 10px;
+}

@@ -1,0 +1,63 @@
+			<div>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs nav-tabs-justified" role="tablist">
+	    		<li role="presentation" class="active"><a href="#first" aria-controls="first" role="tab" data-toggle="tab">simpleforecast</a></li>
+	    		<li role="presentation"><a href="#second" aria-controls="second" role="tab" data-toggle="tab">txt_forecast</a></li>
+					<li role="presentation" class="dropdown">
+			    	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">			     
+					  	Daily <span class="caret"></span>
+			    	</a>
+			    	<ul class="dropdown-menu">
+							<% for(var j = 0; j < test.forecast.simpleforecast.forecastday.length; j++) { %>
+								<li role="presentation"><a href="#<%= test.forecast.simpleforecast.forecastday[j].date.epoch %>" aria-controls="<%= test.forecast.simpleforecast.forecastday[j].date.epoch %>" role="tab" data-toggle="tab"><%= test.forecast.simpleforecast.forecastday[j].date.weekday %> <%= test.forecast.simpleforecast.forecastday[j].date.day %></a></li>
+							<% } %>
+			    	</ul>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							Day <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<% for(var i = 0; i < test.forecast.txt_forecast.forecastday.length; i=i + 2) { %>
+								<li role="presentation"><a href="#<%= test.forecast.txt_forecast.forecastday[i].period %>" aria-controls="<%= test.forecast.txt_forecast.forecastday[j].period %>" role="tab" data-toggle="tab"><%= test.forecast.txt_forecast.forecastday[i].title %></a></li>
+							<% } %>
+						</ul>
+					</li>
+					<li role="presentation" class="dropdown">
+		    		<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">			     
+				  		Night <span class="caret"></span>
+		    		</a>
+						<ul class="dropdown-menu">
+							<% for(var k = 1; k < test.forecast.txt_forecast.forecastday.length; k = k + 2) { %>
+								<li role="presentation"><a href="#<%= test.forecast.txt_forecast.forecastday[k].period %>" aria-controls="#<%= test.forecast.txt_forecast.forecastday[k].period %>" role="tab" data-toggle="tab"><%= test.forecast.txt_forecast.forecastday[k].title %></a></li>
+							<% } %>
+						</ul>
+					</li>
+	  		</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+	    		<div role="tabpanel" class="tab-pane fade in active" id="first">
+						<pre><code data-spy="scroll" style="height:60vh;position:relative;overflow-y: scroll;"><%= JSON.stringify(test.forecast.simpleforecast, null, 2) %></code></pre>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="second">
+						<pre><code data-spy="scroll" style="height:60vh;position:relative;overflow-y: scroll;"><%= JSON.stringify(test.forecast.txt_forecast, null, 2) %></code></pre>
+					</div>
+				<% for(var j = 0; j < test.forecast.simpleforecast.forecastday.length; j++) { %>
+					<div role="tabpanel" class="tab-pane" id="<%= test.forecast.simpleforecast.forecastday[j].date.epoch %>">
+						<pre><code data-spy="scroll" style="height:50vh;position:relative;overflow-y: scroll;"><%= JSON.stringify(test.forecast.simpleforecast.forecastday[j], null, 4) %></code></pre>
+					</div>
+				<% } %>
+			
+				<% for(var i = 0; i < test.forecast.txt_forecast.forecastday.length; i=i + 2) { %>
+		  		<div role="tabpanel" class="tab-pane fade" id="<%= test.forecast.txt_forecast.forecastday[i].period %>">	
+						<pre><code data-spy="scroll" style="height:25vh;position:relative;overflow-y: scroll;"><%= JSON.stringify(test.forecast.txt_forecast.forecastday[i], null, 4) %></code></pre>
+					</div>
+				<% } %>
+			
+				<% for(var k = 1; k < test.forecast.txt_forecast.forecastday.length; k=k+2) { %>
+					<div role="tabpanel" class="tab-pane fade" id="<%= test.forecast.txt_forecast.forecastday[k].period %>">
+						<pre><code data-spy="scroll" style="height:25vh;position:relative;overflow-y: scroll;"><%= JSON.stringify(test.forecast.txt_forecast.forecastday[k], null, 4) %></code></pre>
+	    		</div>
+				<% } %>
+				</div>
+			</div>

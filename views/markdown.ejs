@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PreviewMD</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="/stylesheets/markdown.css">
+
+  
+</head>
+
+<body>
+  <h3>#MARKIT</h3>
+<textarea style="width:100%;" class="col-md-6" id="inward" rows="32">
+# Markdown Editor
+
+This is the **simplest** and **slickest** online Markdown editor.  
+Just write Markdown and see what it looks like as you type. And convert it to HTML in one click.
+
+### Buttons you might want to use
+
+- **Quick Reference**: that's a reminder of the most basic rules of Markdown
+- **HTML | Preview**: *HTML* to see the markup generated from your Markdown text, *Preview* to see how it looks like
+
+-----------------------------------------
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+-----------------------------------------</textarea>
+<div style="width:100%;" class="col-md-6" id="outward"></div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js'></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src="javascripts/markdown.js"></script>
+
+</body>
+</html>
